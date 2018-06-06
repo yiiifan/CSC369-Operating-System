@@ -29,7 +29,7 @@ Data structures and bookkeeping
 		pid_t pid + list_head list;
 	struct mytable; /*store info about intercepted/replaced system calls
 
-  typedef struct {
+  	typedef struct {
 
 	  /* Original system call */
 	  asmlinkage long (*f)(struct pt_regs);
@@ -42,7 +42,7 @@ Data structures and bookkeeping
 	  int listcount;
 
 	  struct list_head my_list;
-  }mytable;
+ 	 }mytable;
 
 
 	mytable table[NR_syscalls+1];/*entry for each system call
